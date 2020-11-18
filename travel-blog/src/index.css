@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-container{
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #ebf6fd;
+}
+
+.nav-title-grid {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  text-align: center;
+  line-height: 0px;
+  height: 80px;
+}
+
+.nav-buttons-grid{
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+
+  height: 80px;
+}
+
+.nav-button{
+  margin: 20px 4px;
+  font-size: 17px;
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-button:hover{
+  cursor: pointer;
+  border: 2px solid lightslategray;
+}
+
+.nav-current-route{
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+}
+
+#nav-title{
+  font-size: 30px;
+}
+
+#nav-subtitle{
+  font-style: italic;
+}
+
+.about-container{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#background-img{
+  width: 90%;
+  margin: 0px 5%;
+}
+
+.info-container{
+  display: flex;
+  flex-direction: row;
+  margin: 25px 5%;
+  justify-content: center;
+}
+
+#my-img-container{
+  width: 35%;
+  text-align: end;
+  margin-right: 1%;
+}
+
+#my-img{
+  width: 90%;
+  border-radius: 100%;
+}
+
+#my-info{
+  width: 54%;
+  margin-left: 1%;
+}
+
+.footer-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  height: 45px;
+  justify-content: center;
+  position:fixed;
+  bottom: 0;
+}
+
+.timer-container{
+  height: 300px;
+  border: 2px solid black;
+  width: 80%;
+  margin: 50px 10%;
+  text-align: center;
+}
